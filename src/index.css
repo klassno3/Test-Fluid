@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face
+{
+  font-family: "GilroyRegular";
+  src: local("GilroyRegular"),
+    url("./fonts//SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html
+{
+  font-family: "GilroyRegular";
+  color: rgb(38, 38, 38);
+}
+
+.bgRestaurant
+{
+  background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8),
+      rgb(38, 38, 38, 0.1), rgb(38, 38, 38)),
+    url('./Image/restaurant\ card.png');
+  background-size: cover;
+}
+
+.bgReservation
+{
+  background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8),
+      rgb(38, 38, 38, 0.1), rgb(38, 38, 38)),
+    url('./Image/reservation.png');
+}
+
+.gradient
+{
+
+  background-image: url('./Image//gradiant.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+
+.contactGradient
+{
+  background-image: url('./Image/gradiant\ form.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mask1
+{
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
 }
