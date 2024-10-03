@@ -54,6 +54,7 @@ const FAQ = () => {
       initial={"offScreen"}
       whileInView={"onScreen"}
       viewport={{ once: true, amount: 0.2 }}
+      id="faq"
       className="flex flex-col lg:flex-row md:gap-12 gap-6 lg:gap-[100px] px-5   py-20 md:px-[60px]"
     >
       <div className="lg:w-[40%] items-start flex flex-col  gap-4 md:gap-4">

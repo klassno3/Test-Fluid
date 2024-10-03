@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Menu from "../../Image/menu.svg";
 import Close from "../../Image/close.svg";
+import { Link } from "react-scroll";
 const Navigation = () => {
   const divEl = useRef();
   useEffect(() => {
@@ -25,12 +26,41 @@ const Navigation = () => {
     <div className="max-w-[1440px] mx-auto">
       <div className="hidden md:flex justify-between px-10 py-[44px]">
         <div className="flex gap-[76px] text-base">
-          <div className="cursor-pointer">Our Features</div>
-          <div className="cursor-pointer">Areas</div>
+          <div className="cursor-pointer"></div>
+          <Link
+            to="features"
+            offset={-150}
+            smooth={true}
+            className="cursor-pointer hover:text-white/90"
+          >
+            Our Features
+          </Link>
+          <Link
+            to="areas"
+            offset={-150}
+            smooth={true}
+            className="cursor-pointer hover:text-white/90"
+          >
+            Areas
+          </Link>
         </div>
         <div className="flex gap-[76px]">
-          <div className="cursor-pointer">FAQs</div>
-          <div className="cursor-pointer">The Wait list</div>
+          <Link
+            to="faq"
+            offset={-150}
+            smooth={true}
+            className="cursor-pointer hover:text-white/90"
+          >
+            FAQs
+          </Link>
+          <Link
+            to="waitlist"
+            offset={-150}
+            smooth={true}
+            className="cursor-pointer hover:text-white/90"
+          >
+            The Wait list
+          </Link>
         </div>
       </div>
       <div className="flex justify-end md:hidden ">
@@ -54,18 +84,42 @@ const Navigation = () => {
             </div>
           )}
           <div className=" py-20 flex flex-col items-center gap-5 text-base">
-            <div className="cursor-pointer" onClick={handleClose}>
+            <Link
+              to="features"
+              offset={-150}
+              smooth={true}
+              className="cursor-pointer hover:text-white/90"
+              onClick={handleClose}
+            >
               Our Features
-            </div>
-            <div className="cursor-pointer" onClick={handleClose}>
+            </Link>
+            <Link
+              to="areas"
+              offset={-150}
+              smooth={true}
+              className="cursor-pointer hover:text-white/90"
+              onClick={handleClose}
+            >
               Areas
-            </div>
-            <div className="cursor-pointer" onClick={handleClose}>
+            </Link>
+            <Link
+              to="faq"
+              offset={-150}
+              smooth={true}
+              className="cursor-pointer hover:text-white/90"
+              onClick={handleClose}
+            >
               FAQs
-            </div>
-            <div className="cursor-pointer" onClick={handleClose}>
+            </Link>
+            <Link
+              to="waitlist"
+              offset={-150}
+              smooth={true}
+              className="cursor-pointer hover:text-white/90"
+              onClick={handleClose}
+            >
               The Wait list
-            </div>
+            </Link>
           </div>
         </div>
       </div>

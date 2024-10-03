@@ -17,7 +17,7 @@ const JoinWaitList = () => {
     }, [3000]);
   };
   return (
-    <div className="lg:px-[85px] py-6 px-5 md:y-12 md:px-12 lg:py-[140px] contactGradient flex flex-col lg:flex-row justify-between">
+    <div id="waitlist" className="lg:px-[85px] py-6 px-5 md:y-12 md:px-12 lg:py-[140px] contactGradient flex flex-col lg:flex-row justify-between">
       <div className="lg:w-1/2 flex flex-col gap-5 lg:gap-10">
         <h3 className="text-[32px]  md:text-[80px] leading-[110%] md:-tracking-[2px]">
           Join the Fluid AI Waitlist Today!

@@ -7,7 +7,10 @@ import "./features.css";
 
 const Features = () => {
   return (
-    <div className="h-full flex flex-col gap-10 md:gap-[130px] md:py-10 py-32">
+    <div
+      id="features"
+      className="h-full flex flex-col gap-10 md:gap-[130px] md:py-10 py-32"
+    >
       <div className="px-8 flex flex-col gap-4 md:gap-7 justify-center items-center text-center ">
         <p className="text-white/60 leading-[130%] text-base md:text-[18px]">
           Our Features
