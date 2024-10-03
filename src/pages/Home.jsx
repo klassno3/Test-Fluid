@@ -8,7 +8,7 @@ import Features from "../components/layout/Features/Features";
 import Carousel from "../components/layout/Carousel";
 const Home = () => {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Navigation />
       <Hero />
       <Features />

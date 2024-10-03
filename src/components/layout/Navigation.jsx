@@ -83,7 +83,7 @@ const Navigation = () => {
               />
             </div>
           )}
-          <div className=" py-20 flex flex-col items-center gap-5 text-base">
+          <div className="py-20 flex flex-col items-center gap-5 text-base">
             <Link
               to="features"
               offset={-150}

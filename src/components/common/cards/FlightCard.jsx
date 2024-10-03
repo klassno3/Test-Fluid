@@ -19,7 +19,7 @@ const FlightCard = () => {
   return (
     <motion.div
       variants={leftCardAnimate}
-      className="fixed top-[380px] left-[65px] p-5 md:p-[22px] border-[1px]
+      className="hidden md:flex fixed top-[380px] left-[65px] p-5 md:p-[22px] border-[1px]
       border-white/10 rounded-3xl bg-gradient-to-b from-[#262626]/30
       to-[#8C8C8C]/30"
     >
